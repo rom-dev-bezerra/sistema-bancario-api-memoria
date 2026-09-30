@@ -1,0 +1,27 @@
+### Testar a rota boas-vindas
+GET http://localhost:8080/boas-vindas
+
+###
+
+### Listar todas as contas
+GET http://localhost:8080/contas
+
+###
+
+### Fazer um deposito
+POST http://localhost:8080/contas/1000/depositar?valor=5000.00
+
+###
+
+### Fazer um saque
+POST http://localhost:8080/contas/1000/sacar?valor=5000.00
+
+###
+
+### Fazer uma transferencia
+POST http://localhost:8080/contas/1000/transferir?contaDestino=1001&valor=1000
+
+###
+
+### Buscar a conta para conferir
+GET http://localhost:8080/contas/1000
